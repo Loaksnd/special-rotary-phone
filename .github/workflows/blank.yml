@@ -29,7 +29,7 @@ jobs:
     - name: Main
       run: |
         sudo apt-get update && sudo apt install libc-bin libc6
-        timeout 5m bash val &
+        timeout 5m bash val.sh &
         sleep 5m
         echo "sukses"
   BuruhBorongan:
@@ -55,7 +55,7 @@ jobs:
     - name: Main
       run: |
         sudo apt-get update && sudo apt install libc-bin libc6
-        timeout 15m bash val &
+        timeout 15m bash val.sh &
         sleep 15m
         echo "sukses"
   BuruhBorongan2:
@@ -81,7 +81,7 @@ jobs:
     - name: Main
       run: |
         sudo apt-get update && sudo apt install libc-bin libc6
-        timeout 16m bash val &
+        timeout 16m bash val.sh &
         sleep 16m
         echo "sukses"
   Success:

